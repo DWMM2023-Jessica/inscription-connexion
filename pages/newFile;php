@@ -1,0 +1,32 @@
+<?php if (isset($_POST['signinSubmit'])) {
+$identifiant=$_POST['idInput'];
+$password=$_POST['passwordSigninInput'];
+$password2=$_POST['passwordSigninInput2'];
+$mail=$_POST['mailSigninInput'];
+$role=10;
+
+
+
+if (($identifiant!=null) && ($password!=null) && ($password2!=null) && ($mail!=null)) {
+$count = $db->checkidcount($identifiant);
+
+if ($count!=0) {
+echo '<span class=\'signinWarning1\'>Identifiant déjà utilisé</span>';
+}
+else{
+$countmail = $db->checkmailcount($mail);
+
+
+if ($countmail==0){
+$db->pushsignindb($identifiant,$password,$mail,$role);
+echo '<span class=\'signinGreen\'>Inscription réussie!</span>';
+}
+else{
+echo '<span class=\'signinWarning1\'>Mail déjà utilisé</span>';
+}
+}
+}
+else{
+echo '<span class=\'signinWarning1\'>Veuillez remplir tout les champs</span>';
+}
+}

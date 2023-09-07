@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.panneauAdmin{
+    padding: 20px;
+    background-color: #346077;
+    height: auto;
+}
+.modalContainer{
+    background: linear-gradient(#346077, #6593ac);
+}
+.modalDecoText{
+    color: white;
+    margin-bottom: 30px;
+}
+.modalDecoSubmit{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 135px;
+    height: 30px;
+    background-color: #ffffff;
+}
+.titre{
+    font-size: 75px;
+    color: white;
+}
+.H1Logo{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    height: 200px;
+    width: 200px;
+}
+.bouton{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.liHref{
+    margin-inline: 10%;
+    list-style: none;
+}
+.allHref{
+    text-decoration: none;
+    color: white;
+}
+.SignOut{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+  
+/* formulaire de connexion  */
+.connexionAdmin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.titreConnexion{
+    font-size: 60px;
+    margin-top: 40px;
+    color: black;
+}
+.connexionLabel{
+    margin-bottom: 10px;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.allInput {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 250px;
+    height: 25px;
+    background-color: white;
+}
+.connexionSubmit{
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 135px;
+    height: 30px;
+    border: none;
+    background-color: #346077;
+    color: white;
+}
+.connexionPassoublier{
+    cursor: pointer;
+    border: none;
+    width: 140px;
+    height: 30px;
+    color: black;
+}
+.connecter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.connecterP{
+    margin-top: 100px ;
+    color: black;
+    font-size: 45px;
+}
+.creationCompte{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 25px;
+    margin-right: 25px;
+    margin-block: 5px;
+
+}
+
+.sectionContainerGestionCompte{
+    display: flex;
+    justify-content: center;
+}
+.containerGestionCompte{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background: linear-gradient(#346077, #6593ac);
+}
+.titreGestionCompte{
+    font-size: 60px;
+    margin-top: 40px;
+    color: white;
+}
+.connexionSubmit2{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 135px;
+    height: 30px;
+    background-color: #ffffff;
+}
+.LabelGestionCompte{
+    margin-bottom: 10px;
+    font-size: 30px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.sectionContainerCreationCompte{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.containerCreationCompte{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background: linear-gradient(#346077, #6593ac);
+}
